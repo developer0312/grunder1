@@ -1,4 +1,4 @@
-.header{
+/* .header{
 	background-color: #669cd9;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
@@ -6,7 +6,11 @@
 		font-size: 24px;
 		padding-top: 1.3rem;
 	}
+	.main-header{
+		background-color: #669cd9;
+	}
 	.menu{
+		background-color: #669cd9;
 		p{
 			color: black;
 		}
@@ -17,6 +21,60 @@
 			font-size: 16px;
 		}
 	}
+} */
+.main-header{
+	a{
+		text-decoration: none;
+	}
+	padding-top: 0rem;
+	background-color: #669cd9;
+   .logo{
+	display: inline-block;
+	img{
+		padding-top: 1.5rem;
+		display: inline-block;
+		max-width: 7rem;
+	 }
+    }
+      nav{
+	        width: 100%;
+        }
+}
+ul{
+	padding-top: 0.5rem;
+	text-align: right;
+	li{
+		text-align: right;
+		list-style: none;
+		display: inline-block;
+		padding: 20px;
+		a{
+		color: white;
+		font-size: 12px;
+		text-transform: uppercase;
+		:hover{	
+			a{
+				color: #fff;
+				text-decoration: none;
+
+			}
+		}
+		}
+	}
+}
+.toggle{
+	.fa{
+		display: inline-block;
+		color: white;
+	}
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
 }
 .main{
 	text-transform: uppercase;
@@ -36,9 +94,16 @@
 	}
 	img{
 		margin-top: 2rem;
+		max-width: 15rem;
 	}
 }
 .whyus{
+	.img{
+		display: inline-block;
+		img{
+			display: inline-block; 
+		}
+	}
 	padding-top: 5rem;
 	padding-bottom: 5rem;
 	h2{
@@ -71,7 +136,95 @@
 		font-size: 20px;
 	}
 }
-@media ( max-width: 767px ) {
+.features {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+
+	background-color: #fff;
+	
+	text-transform: uppercase;
+	h2{
+		text-align: center;
+		margin-bottom: 5rem;
+		
+		color: #669cd9;
+	}
+  &-block {
+    text-align: center;
+    h3 {
+      font-size: 18px;
+    color: #669cd9;
+    }
+    p{
+    	color: #669cd9;
+      display: inline-block;
+      
+      width: 80%;
+      font-size: 1.4rem;
+    }
+  }
+  &-img {
+    height: 8rem;
+    margin-bottom: 3rem;
+    img{
+      display: block;
+      margin: 0 auto;
+      max-width: 50px;
+    }
+  }
+  .slick-active{
+  outline:none;
+  }
+  .arrow {
+  top: 15%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  }
+  .prev{
+  left:0;
+  background: url(../img/left.png) center no-repeat;
+  background-size: 70%;
+  }
+  .next{
+  right:0;
+  background: url(../img/right.png) center no-repeat;
+  background-size: 70%;        
+  }
+}
+@media ( max-width: 768px ) {
+	.main-header{
+		.logo{
+
+			img{
+				display: none;
+			}
+		}
+	}
+	.logo{
+		img{
+			max-width: 80px;
+			display: inline-block;
+			display: none;
+		}
+	}
+	.active{
+		display: block;
+	}
+	.toggle{
+		display: inline-block;
+	}
+	ul{
+		width: 100%;
+		display: none;
+		li{
+			display: block;
+			text-align: center;
+		}
+	}
 	.main{
 		background-size: 100% no-repeat;
 		background-position: center center;
@@ -86,9 +239,16 @@
 		padding-top: 2rem;
 		.logo{
 			margin-bottom: 2rem;
+			display: inline-block;
+			img{
+				display: inline-block;
+			}
+		}
+		.phone1{
+			display: inline-block;
 		}
 		span{
-			margin-top: 5rem;
+			display: inline-block;
 		}
 	}
 	.whyus{
@@ -96,4 +256,8 @@
 			margin-bottom: 4rem;
 		}
 	}
+}
+
+@media ( max-width: 1090px ) {
+
 }

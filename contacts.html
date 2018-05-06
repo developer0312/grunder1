@@ -6,22 +6,29 @@
 	<link rel="stylesheet" href="contacts/css/bootstrap.css">
 	<link rel="stylesheet" href="contacts/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 </head>
 <body>
-	<section class="header">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-2 col-sm-2"><img src="img/logo.png" alt=""></div>
-				<div class=" menu col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8">
-				<div class="col-lg-"><a href="index.html"><p>главная</p></a></div>
-				<div class="col-lg-"><a href="aboutus.html"><p>о нас</p></a></div>
-				<div class="col-lg-"><a href="thermotech 2016.pdf"><p>продукция</p></a></div>
-				<div class="col-lg-"><a href="certificates.html"><p>сертификаты</p></a></div>
-				<div class="col-lg-"><a href="contacts.html"><p>контакты</p></a></div></div>
-				<div class=" span col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2"><span>0555900063</span></div>
-			</div>
-		</div>
-	</section>
+    <div class="main-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 logo"><img src="img/logo.png" alt=""></div>
+
+            <div class="col-8 col-offset-2 mainmenu  ">
+             <nav>
+            <div class="toggle">
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+        <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">главная</a></li>
+                <li><a href="aboutus.html"> о нас</a></li>
+                <li><a href="thermotech 2016.pdf">продукция</a></li>
+                <li><a href="certificates.html">сертификаты</a></li>
+                <li><a href="contacts.html">контакты</a></li>
+        </ul>
+           </nav></div></div>
+        </div>
+    </div>
 	<div class="main">
 		<div class="container">
 			<div class="row">
@@ -43,5 +50,23 @@
 			</div>
 		</div>
 	</div>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 logo"><img src="img/logo.png" alt=""></div>
+                <div class="col-lg-2 col-lg-offset-8 col-md-2 col-sm-2 col-sm-offset- phone1"><span>0555900063</span></div>
+            </div>
+        </div>
+    </section> 
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document ).ready(function() {
+            $('.menu').click(function(){
+                $('ul').toggleClass('active');
+            })
+        })
+    </script>
 </body>
 </html>

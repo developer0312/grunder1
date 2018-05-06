@@ -6,8 +6,31 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+
 </head>
 <body>
+	<div class="main-header">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-2 col-sm-2 logo"><img src="img/logo.png" alt=""></div>
+
+			<div class="col-8 col-offset-2 mainmenu  ">
+	         <nav>
+	    	<div class="toggle">
+			<i class="fa fa-bars menu" aria-hidden="true"></i>
+		</div>
+		<ul class="right hide-on-med-and-down">
+				<li><a href="index.html">главная</a></li>
+				<li><a href="aboutus.html"> о нас</a></li>
+				<li><a href="thermotech 2016.pdf">продукция</a></li>
+				<li><a href="certificates.html">сертификаты</a></li>
+				<li><a href="contacts.html">контакты</a></li>
+		</ul>
+	       </nav></div></div>
+		</div>
+	</div><!-- 
 	<section class="header">
 		<div class="container">
 			<div class="row">
@@ -21,7 +44,7 @@
 				<div class=" span col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2"><span>0555900063</span></div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 	<section class="main">
 		<div class="container">
 			<div class="row">
@@ -31,26 +54,103 @@
 			</div>
 		</div>
 	</section>
-	<section class="whyus">
-		<div class="container">
-			<div class="row">
-				<h2>почему мы?</h2>
-				<div class="col-lg-4"><img src="img/1.png" alt="">
-					<p>качество</p></div>
-				<div class="col-lg-4"><img src="img/2.png" alt="">
-					<p>приемлемые цены</p></div>
-				<div class="col-lg-4"><img src="img/3.png" alt="">
-					<p>лояльность</p></div>
-			</div>
-		</div>
-	</section>
+    <section class="features">
+         <div class="container">
+            <h2 class="section-header lang" key="feath1">почему мы?</h2>
+            <div class="featured-slider">
+            <div class="features-block">
+            <div class="features-img">
+            <picture>
+            <source srcset="img/1.png" type="image/">
+            <img src="img/1.png" alt="">
+            </picture>
+            </div>
+            <h3  class="lang" key="feat2">качество</h3>
+            </div>
+            <div class="features-block">
+            <div class="features-img">
+            <picture>
+            <source srcset="img/2.png" type="image/">
+            <img src="img/2.png" alt="">
+            </picture>
+            </div>
+            <h3  class="lang" key="feat3">приемлемые цены</h3>
+            </div>
+            <div class="features-block">
+            <div class="features-img">
+            <picture>
+            <source srcset="img/3.png" type="image/">
+            <img src="img/3.png" alt="">
+            </picture>
+            </div>
+            <h3  class="lang" key="feat4">лояльность</h3>
+            </div>
+            </div>
+            </div>
+    </section>
+
 	<section class="footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-2 col-sm-2 logo"><img src="img/logo.png" alt=""></div>
-				<div class="col-lg-2 col-lg-offset-8 col-md-2 col-sm-2"><span>0555900063</span></div>
+				<div class="col-lg-2 col-lg-offset-8 col-md-2 col-sm-2 col-sm-offset- phone1"><span>0555900063</span></div>
 			</div>
 		</div>
-	</section>
+	</section> 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document ).ready(function() {
+			$('.menu').click(function(){
+				$('ul').toggleClass('active');
+			})
+		})
+	</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <script src="slick/slick.min.js"></script>
+    <link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> 
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <script>$(document).ready(function(){
+            $('.popup-btn').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeIn();
+            });
+            $('.popup-close').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeOut();
+            });
+            $('.acb').on('click', function(event) {
+                event.preventDefault();
+                $('.popup').fadeOut();
+            });
+            $('.featured-slider').slick({
+                 infinite: true,
+                 slidesToShow: 4,
+                 slidesToScroll: 1,
+                 responsive: [
+            {
+                 breakpoint: 991,
+                 settings: {
+                 slidesToShow: 2,
+                 prevArrow: '<button class="prev arrow"></button>',
+                 nextArrow: '<button class="next arrow"></button>',
+                 slidesToScroll: 2
+            }
+            },
+            {
+                 breakpoint: 767,
+                 settings: {
+                 slidesToShow: 1,
+                 prevArrow: '<button class="prev arrow"></button>',
+                 nextArrow: '<button class="next arrow"></button>',
+                 slidesToScroll: 1
+            }
+            }
+            ]
+            });
+            });
+    </script>
 </body>
 </html>

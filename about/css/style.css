@@ -1,20 +1,73 @@
-.header {
+/* .header{
+	background-color: #669cd9;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	.span{
+		font-size: 24px;
+		padding-top: 1.3rem;
+	}
+	.menu{
+		p{
+			color: black;
+		}
+		.col-lg-{
+			padding-top: 2rem;
+			display: inline-block;
+			margin-left: 1rem;
+			font-size: 16px;
+		}
+	}
+} */
+.main-header {
+  padding-top: 0rem;
   background-color: #669cd9;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
-.header .span {
-  font-size: 24px;
-  padding-top: 1.3rem;
+.main-header a {
+  text-decoration: none;
 }
-.header .menu p {
-  color: black;
-}
-.header .menu .col-lg- {
-  padding-top: 2rem;
+.main-header .logo {
   display: inline-block;
-  margin-left: 1rem;
-  font-size: 16px;
+}
+.main-header .logo img {
+  padding-top: 1.5rem;
+  display: inline-block;
+  max-width: 7rem;
+}
+.main-header nav {
+  width: 100%;
+}
+ul {
+  padding-top: 0.5rem;
+  text-align: right;
+}
+ul li {
+  text-align: right;
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+ul li a {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+ul li a :hover a {
+  color: #fff;
+  text-decoration: none;
+}
+.toggle {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: right;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 30px;
+  display: none;
+}
+.toggle .fa {
+  display: inline-block;
+  color: white;
 }
 h2 {
   margin-top: 5rem;
@@ -46,8 +99,58 @@ h2 {
   margin-top: 5rem;
   font-size: 14px;
   line-height: 2;
+  margin-bottom: 5rem;
+}
+.footer {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #669cd9;
+}
+.footer .logo img {
+  max-width: 70px;
+}
+.footer span {
+  font-size: 20px;
 }
 @media (max-width: 767px) {
+  .footer {
+    padding-top: 2rem;
+  }
+  .footer .logo {
+    margin-bottom: 2rem;
+    display: inline-block;
+  }
+  .footer .logo img {
+    display: inline-block;
+  }
+  .footer .phone1 {
+    display: inline-block;
+  }
+  .footer span {
+    display: inline-block;
+  }
+  .main-header .logo img {
+    display: none;
+  }
+  .logo img {
+    max-width: 80px;
+    display: inline-block;
+    display: none;
+  }
+  .active {
+    display: block;
+  }
+  .toggle {
+    display: inline-block;
+  }
+  ul {
+    width: 100%;
+    display: none;
+  }
+  ul li {
+    display: block;
+    text-align: center;
+  }
   body {
     text-align: center;
   }

@@ -19,6 +19,60 @@
 	}
 }
 
+.main-header{
+	a{
+		text-decoration: none;
+	}
+	padding-top: 0rem;
+	background-color: #669cd9;
+   .logo{
+	display: inline-block;
+	img{
+		padding-top: 1.5rem;
+		display: inline-block;
+		max-width: 7rem;
+	 }
+    }
+      nav{
+	        width: 100%;
+        }
+}
+ul{
+	padding-top: 0.5rem;
+	text-align: right;
+	li{
+		text-align: right;
+		list-style: none;
+		display: inline-block;
+		padding: 20px;
+		a{
+		color: white;
+		font-size: 12px;
+		text-transform: uppercase;
+		:hover{	
+			a{
+				color: #fff;
+				text-decoration: none;
+
+			}
+		}
+		}
+	}
+}
+.toggle{
+	.fa{
+		display: inline-block;
+		color: white;
+	}
+	display: inline-block;
+	width: 100%;
+	padding: 10px 20px;
+	text-align: right;
+	box-sizing: border-box;
+	color: #fff;
+	font-size: 30px;
+	display: none;
+}
 .certificates{
 	h2{
 	    margin-top: 5rem;
@@ -38,7 +92,67 @@
 .row2{
 	margin-top: 2rem;
 }
+
+.footer{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	background-color: #669cd9;
+	.logo{
+		img{
+			max-width: 70px;
+		}
+	}
+	span{
+		font-size: 20px;
+	}
+}
 @media ( max-width: 767px ) {
+
+	.footer{
+		padding-top: 2rem;
+		.logo{
+			margin-bottom: 2rem;
+			display: inline-block;
+			img{
+				display: inline-block;
+			}
+		}
+		.phone1{
+			display: inline-block;
+		}
+		span{
+			display: inline-block;
+		}
+	}
+	.main-header{
+		.logo{
+
+			img{
+				display: none;
+			}
+		}
+	}
+	.logo{
+		img{
+			max-width: 80px;
+			display: inline-block;
+			display: none;
+		}
+	}
+	.active{
+		display: block;
+	}
+	.toggle{
+		display: inline-block;
+	}
+	ul{
+		width: 100%;
+		display: none;
+		li{
+			display: block;
+			text-align: center;
+		}
+	}
 	body{
 		text-align: center;
 	}
