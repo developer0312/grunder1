@@ -89,6 +89,9 @@ ul li a :hover a {
   color: white;
 }
 @media (max-width: 767px) {
+  .contact {
+    margin-top: 5rem;
+  }
   .main-header .logo img {
     display: none;
   }
@@ -109,7 +112,7 @@ ul li a :hover a {
   }
   ul li {
     display: block;
-    text-align: center;
+    text-align: left;
   }
   .footer {
     padding-top: 2rem;

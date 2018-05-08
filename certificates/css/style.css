@@ -129,7 +129,7 @@ ul li a :hover a {
   }
   ul li {
     display: block;
-    text-align: center;
+    text-align: left;
   }
   body {
     text-align: center;
