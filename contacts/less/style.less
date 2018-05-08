@@ -10,7 +10,7 @@
 
 body{
 	.content{
-		margin-bottom: 25rem;
+		padding-bottom: 25rem;
 		margin-top: 3rem;
 	}
 	.img{
@@ -105,8 +105,15 @@ ul{
 	display: none;
 }
 @media ( max-width: 767px ) {
-	.right-content{
-		margin-top: 5rem;
+	.content{
+		padding-bottom: 0rem;
+		.container{
+			.row{
+				.right-content{
+					margin-top: 15rem;
+				}
+			}
+		}
 	}
 	.main-header{
 		.logo{
@@ -138,9 +145,9 @@ ul{
 		}
 	}
 	.footer{
-
-		padding-top: 2rem;
+		padding-top: 10rem;
 		.logo{
+			margin-top: 2rem;
 			margin-bottom: 2rem;
 			display: inline-block;
 			img{
