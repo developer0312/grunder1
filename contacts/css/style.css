@@ -89,7 +89,7 @@ ul li a :hover a {
   color: white;
 }
 @media (max-width: 767px) {
-  .contact {
+  .right-content {
     margin-top: 5rem;
   }
   .main-header .logo img {
