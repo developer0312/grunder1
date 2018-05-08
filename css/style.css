@@ -42,10 +42,10 @@
 }
 ul {
   padding-top: 0.5rem;
-  text-align: left;
+  text-align: right;
 }
 ul li {
-  text-align: left;
+  text-align: right;
   list-style: none;
   display: inline-block;
   padding: 20px;
